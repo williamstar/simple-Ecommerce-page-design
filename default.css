@@ -1,0 +1,81 @@
+* {
+    margin: 0 0;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    color: #303643;
+}
+
+html{
+    height:2000px;
+}
+.inline {
+    display: inline-block;
+}
+
+.center {
+    max-width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+@media(max-width:1350px){
+    .primitive-price{
+        margin-left:5%;
+    }
+    .comment{
+        margin-left:10%;
+    }
+}
+@media(max-width:1134px){
+    .center{
+        max-width:90%;
+    }
+
+    .primitive-price{
+        margin-left:7%;
+    }
+    .comment{
+        margin-left:20%;
+    }
+}
+@media(max-width:960px){
+    .center{
+        max-width:80%;
+    }
+    .shop-logo{
+        width:572px;
+        height:154px;
+        margin:0 auto;
+        background-image:url('small-logo.png');
+    }
+    .shop-logo-warp{
+        width:100%;
+        height:159px;
+    }
+}
+@media(max-width:700px){
+    .center{
+        max-width:100%; 
+    }
+}
+.right {
+    right: 0px;
+    position: absolute;
+}
+
+.btn {
+    border:1px #F0CAB6 solid;
+    font-size:19px;
+    height:38px;
+    border-radius: 2px;
+    text-align:center;
+}
+
+.drop-down{
+    display: none;
+    text-align:center;
+    position:absolute;
+}
+
+input{
+    padding:5px;
+}
+

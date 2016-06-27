@@ -1,0 +1,236 @@
+/*
+    show-bar
+*/
+
+.shop {
+    overflow: hidden;
+}
+
+.all-kind {
+    /*white-space: nowrap;*/
+    padding-right: 10px;
+}
+
+.all {
+    color: white;
+}
+
+.all-kind:hover {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.shop-logo-warp {
+    background: #F2F2F2;
+    width: 105%;
+    height: 120px;
+}
+
+.shop-logo {
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    vertical-align: middle;
+    width: 899px;
+    height: 115px;
+    position: relative;
+    left: -14px;
+}
+
+.all-kind:hover .drop-down {
+    display: block;
+}
+
+.sort-item {
+    line-height: 30px;
+    width: 80px;
+}
+
+.sort-item:hover {
+    background: #6633cc;
+}
+
+.shop-bar-item {
+    line-height: 40px;
+}
+
+.wrap-shop-bar {
+    background: #b7deed;
+    background: -moz-linear-gradient(top, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%);
+    background: -webkit-linear-gradient(top, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%);
+    background: linear-gradient(to bottom, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed', GradientType=0);
+    height: 40px;
+}
+
+.shop-bar-item {
+    text-align: center;
+    color: white;
+    width: 80px;
+}
+
+.shop-bar-item:hover {
+    background: #D8002E;
+}
+
+
+/*
+    show-body
+*/
+
+.product-intro {
+    margin: 20px auto;
+    position: relative;
+    width: 110%;
+    left: -5%;
+    height: 500px;
+    border: 1px rgba(255, 231, 216, 0.6) solid;
+    display: flex;
+    display: -webkit-flex;
+    padding-top: 10px;
+}
+
+.product-intro .product-img {
+    margin-left: 30px;
+    -webkit-flex: 2;
+    flex: 2;
+    width: 100%;
+}
+
+.main-picture-box {
+    cursor: move;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.product-img .main-picture {
+    position: relative;
+    width: 100%;
+}
+
+.main-big-box {
+    background-color: white;
+    left: 448.66px;
+    width: 400px;
+    height: 400px;
+    top: 0px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.product-img .big-picture {
+    background-image: url('./mac1.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+
+.imgBox{
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.img-list{
+    margin-left:10px;
+}
+/*
+    product-detail
+*/
+.product-intro .product-detail {
+    -webkit-flex: 3;
+    flex: 3;
+    margin-left: 20px;
+    position: relative;
+}
+
+.product-intro .product-header {
+    padding-left: 4px;
+    padding-top: 4px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product-intro .product-desc {
+    position: relative;
+    padding-left: 4px;
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.product-intro .product-price {
+    margin-top: 5px;
+    position: relative;
+}
+
+.primitive-price {
+    margin-left: 10%;
+    padding-left: 5px;
+}
+
+.price-block {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.comment {
+    margin-left: 30%;
+    width: 66px;
+    text-align: center;
+}
+
+.succeed-trade {
+    text-align: center;
+    width: 66px;
+    margin-left: 5%;
+}
+
+.real-price {
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+.address {
+    margin-top: 10px;
+    margin-left: 10%
+}
+
+.nums{
+    margin-top:30px;
+
+}
+
+.purchase{
+    margin-top:30px;
+}
+.purchase-button{
+    
+    background-color:#FFE4D0;
+    width:120px;
+    color: #E5511D;
+    margin-left:0;
+}
+
+.purchase-button:hover{
+    background-color:#F0CAB6;
+}
+
+.purchase-cart{
+    background-color:#FF4400;
+    width:130px;
+    margin-left:6px;
+    color:white;
+}
+.purchase-cart:hover{
+    background-color:red;
+}

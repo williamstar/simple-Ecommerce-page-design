@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My shop</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./shop.css">
+    <link rel="stylesheet" type="text/css" href="./default.css">
+    <link rel="stylesheet" type="text/css" href="./bar.css">
+    <link rel="stylesheet" type="text/css" href="./color.css">
+    <script src=""></script>
+    <script src="./page.js"></script>
+</head>
+
+<style>
+    .search {
+        position: relative;
+        margin-top: 20px;
+        height: 50px;
+    }
+    
+    .label {
+        position: absolute;
+        left: 0px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="subContainer center">
+                <div class="inline item username" onclick="speak()">林香儿</div>
+                <div class="right inline">
+                    <div class="inline item collect">收藏夹</div>
+                    <div class="inline item sort-product">商品分类</div>
+                    <div class="inline item contact-saler">联系卖家</div>
+                    <div class="inline item my_taobao">我的淘宝</div>
+                    <div class="inline item shop_cart">购物车</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search center">
+            <div class="label inline">
+                Arc购物欢迎您！
+            </div>
+            <div class="search-box inline right">
+                <input type="text" placeholder="请入搜索内容">
+                <input type="button" class="btn light-puple" value="arc搜索">
+                <input type="button" class="btn middle-blue" value="淘宝搜索">
+            </div>
+        </div>
+        <div class="shop">
+            <div class="shop-logo-warp">
+                <div class="shop-logo"></div>
+            </div>
+            <div class="wrap-shop-bar">
+                <div class="shop-bar center">
+                    <div class="all-kind shop-bar-item inline ">
+                        <div class="all">所有分类</div>
+                        <div class="drop-down">
+                            <div class="sort-item btn light-puple">饮料</div>
+                            <div class="sort-item btn light-puple">冰激凌</div>
+                            <div class="sort-item btn light-puple">甜点</div>
+                        </div>
+                    </div>
+                    <div class="back-main shop-bar-item inline">
+                        回到首页
+                    </div>
+                    <div class="shop-discount shop-bar-item inline">
+                        店铺活动
+                    </div>
+                </div>
+            </div>
+            <div class="shop-body center">
+
+                <div class="product-intro">
+                    <div class="product-img">
+                        <div class="main-picture-box">
+                            <img src="./mac1.jpg" class="main-picture" alt="图片无法显示">
+                        </div>
+                        <div class="main-big-box">
+                            <div class="big-picture"></div>
+                        </div>
+                        <div class="imgBox">
+                        </div>
+                    </div>
+                    <div class="product-detail">
+                        <div class="product-header">
+                            [william star] 全新爆款的MAC-PRO 512GB SSD 8GB 内存 磨砂外表高超工艺
+                        </div>
+                        <div class="product-desc">
+                            第六代 Intel 处理器、提升的图形处理性能、高速闪存和最长可达 10 小时的电池使用时间*，MacBook 的强大更进一步。
+                        </div>
+                        <div class="product-price">
+                            <div class="primitive-price inline">
+                                <div class="price-block">
+                                    价格&nbsp;&nbsp;&nbsp;&nbsp;￥12999
+                                </div>
+                            </div>
+                            <div class="comment inline">
+                                累计评论187
+                            </div>
+                            <div class="succeed-trade inline">
+                                成功交易1220
+                            </div>
+                            <div class="real-price">
+                                Arc价&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span style="color:red;font-size:40px;font-weight:600;">￥11999</span>
+                            </div>
+                            <div class="address">
+                                配送&nbsp;&nbsp;&nbsp;&nbsp; 上海&nbsp;&nbsp;至
+                                <select>
+                                    <option value="">福州</option>
+                                    <option value="">厦门</option>
+                                    <option value="">泉州</option>
+                                </select> &nbsp;&nbsp;
+                                <select>
+                                    <option value="">免运费</option>
+                                    <option value="">顺风加钱</option>
+                                </select>
+
+                                <div class="nums">
+                                    <input type="button" value="-" onclick="minusOne()">
+                                    <input type="text" id="num" style="text-align:center;" size=1 value=0>
+                                    <input type="button" value="+" onclick="addOne()">
+                                </div>
+                                <div class="purchase">
+                                    <input type="button" class="purchase-button btn" value="立即购买">
+                                     <input type="button" class="purchase-cart btn" value="加入购物车">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-recommand">
+                    <h3 class="header">
+                        商品推荐
+                    </h3>
+                </div>
+                <div class="product-more-detail">
+                    商品详情(客服咨询，宝贝详情，评论)
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
