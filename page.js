@@ -3,10 +3,14 @@ var cY = 0;
 var mX = 0;
 var mY = 0;
 var load = false;
-var matrixWidth = 100;
-var matrixHeight = 100;
-var imgs = ['./mac1.jpg', './mac2.jpg', './mac3.jpg', './mac4.jpg'];
 
+//图片真实大小/图片能缩放的大小即中间可移动区间大小 move = 600/2.5 = 240
+//即图片的matrixWidth = 400 - 240 = 160 
+var matrixWidth = 160;
+var matrixHeight = 160;
+var imgs = ['./mac1.jpg', './mac2.jpg', './mac3.jpg', './mac4.jpg'];
+var currentIndex = 0;
+var components = ['rich-detail','rich-comment'];
 
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
@@ -40,13 +44,12 @@ function initApplication() {
         moveP(cobj, iobj);
     }, false);
 
-    document.querySelector('.main-picture-box').addEventListener('click', function (e) {
+    document.querySelector('.main-picture-box').addEventListener('mouseover', function (e) {
         var obj = document.querySelector('.main-big-box');
         if (!load) {
             obj.style.display = 'inline-block';
             load = true;
         } else {
-            console.log('>');
             obj.style.visibility = 'visible';
         }
     }, false);
@@ -56,6 +59,19 @@ function initApplication() {
 
     }, false);
 
+    document.querySelector('.rich-product-header').addEventListener('mouseover',function(e){
+        var index = e.target.getAttribute('data-index');
+        if(index === null) return;
+        var objs = document.querySelectorAll('.tab');
+        objs[index].className = objs[index].className + ' active';
+        objs[currentIndex].className = objs[currentIndex].className.replace('active','');
+
+        //替换激活的组件
+        objs = document.querySelectorAll('.disappear');
+        objs[currentIndex].className = objs[currentIndex].className.replace('c-active','');
+        objs[index].className = objs[index].className + ' c-active';
+        currentIndex = index;
+    },false);
 }
 
 

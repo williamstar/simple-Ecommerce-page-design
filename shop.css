@@ -43,6 +43,7 @@
 }
 
 .sort-item {
+    color: white;
     line-height: 30px;
     width: 80px;
 }
@@ -133,17 +134,20 @@
     background-position-y: 0px;
 }
 
-.imgBox{
-    margin-left:10px;
-    margin-top:10px;
+.imgBox {
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
-.img-list{
-    margin-left:10px;
+.img-list {
+    margin-left: 10px;
 }
+
+
 /*
     product-detail
 */
+
 .product-intro .product-detail {
     -webkit-flex: 3;
     flex: 3;
@@ -183,7 +187,7 @@
     position: relative;
 }
 
-.comment {
+.product-price .comment {
     margin-left: 30%;
     width: 66px;
     text-align: center;
@@ -205,32 +209,116 @@
     margin-left: 10%
 }
 
-.nums{
-    margin-top:30px;
-
+.nums {
+    margin-top: 30px;
 }
 
-.purchase{
-    margin-top:30px;
+.purchase {
+    margin-top: 30px;
 }
-.purchase-button{
-    
-    background-color:#FFE4D0;
-    width:120px;
+
+.purchase-button {
+    background-color: #FFE4D0;
+    width: 120px;
     color: #E5511D;
-    margin-left:0;
+    margin-left: 0;
 }
 
-.purchase-button:hover{
-    background-color:#F0CAB6;
+.purchase-button:hover {
+    background-color: #F0CAB6;
 }
 
-.purchase-cart{
-    background-color:#FF4400;
-    width:130px;
-    margin-left:6px;
-    color:white;
+.purchase-cart {
+    background-color: #FF4400;
+    width: 130px;
+    margin-left: 6px;
+    color: white;
 }
-.purchase-cart:hover{
-    background-color:red;
+
+.purchase-cart:hover {
+    background-color: red;
+}
+
+
+/*
+    商品推荐
+*/
+
+.product-recommand {
+    margin-top: 10px;
+}
+
+.recommand-product {
+    margin-left: 20px;
+}
+
+.recommand-product> img {
+    width: 120px;
+    height: 100px;
+}
+
+.rich-product {
+    width:100%;
+    padding:3px;
+    margin-top: 50px;
+    overflow:hidden;
+    position:relative;
+    /*border:1px lightgrey solid;*/
+}
+
+.active {
+    background-color: lightgray;
+}
+
+.rich-detail {
+    width: 100%;
+}
+
+.rich-comment {
+    width: 100%;
+    text-align:left;
+}
+
+.disappear {
+    display: none;
+}
+
+.c-active {
+    display: block;
+}
+
+.rich-product-body{
+    margin-top:30px;
+}
+
+.rich-product-body p{
+    margin-top:10px;
+}
+.rich-product-body img{
+    margin-top:30px;
+    margin-bottom:50px;
+}
+
+.product-attribute{
+    margin:40px auto;
+    text-align: center;
+}
+.product-attribute .attr{
+    margin-left:20px;
+}
+
+.rich-comment .comment{
+    width:100%;
+    vertical-align:middle;
+    position:relative;
+    border:1px lightblue solid;
+}
+
+.rich-comment img{
+    width:50px;
+    height:50px;
+}
+
+.comments{
+    vertical-align:top;
 }
